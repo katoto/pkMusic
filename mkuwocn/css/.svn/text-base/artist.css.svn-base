@@ -1,0 +1,7 @@
+@charset "utf-8";
+
+.artistbang{ border-top: 0.2rem solid #f2f2f2;}
+.artistbang li{ margin-left:0.2rem;border-bottom: 1px solid #e5e5e5;color: #333;}
+.artistbang li.bolds{ margin:0;width: 100%;height: 0.2rem;background: #f2f2f2;}
+.artistbang .artist_fenlei{ height: 1.05rem;line-height: 1.05rem;font-size: 0.32rem;}
+.artist_toright{width: 0.4rem; height: 1.05rem;background: url(../img/arrow_r.png) no-repeat center center;background-size: 40%; margin-right: 0.2rem;}

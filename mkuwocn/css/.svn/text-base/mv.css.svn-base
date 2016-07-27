@@ -1,0 +1,8 @@
+@charset "utf-8";
+
+.mvbang{ margin-top: 0.1rem;}
+.mvbang li{ font-size: 0.3rem;color: #333;}
+.mvbang_pic{float: left;width: 1.94rem;height: 1.2rem;border-bottom: 1px solid transparent;padding: 0.1rem 0.2rem;}
+.mvbang_pic img{ width: 100%;height: 100%;}
+.mvbang_txt{ float: left;width:4.96rem;height: 1.2rem;border-bottom: 1px solid #e5e5e5;padding: 0.1rem 0.2rem 0.1rem 0;line-height: 1.1rem;}
+.mv_toright{width: 0.4rem; height: 1.1rem;background: url(../img/arrow_r.png) no-repeat center center;background-size: 40%;}

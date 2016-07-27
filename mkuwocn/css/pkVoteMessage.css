@@ -1,0 +1,234 @@
+body,
+button,
+dd,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+legend,
+li,
+ol,
+p,
+div,
+select,
+table,
+td,
+textarea,
+th,
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 14px;
+	height: 100%;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+	font-family: "微软雅黑", arial, sans-serif;
+}
+
+body {
+	width: 100%;
+	min-width: 320px;
+	position: relative;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h5,
+h6,
+b,
+strong {
+	font-weight: normal;
+}
+
+i,
+em {
+	font-style: normal;
+}
+
+img {
+	border: 0;
+	vertical-align: top;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+.clearfix:after {
+	display: block;
+	content: '';
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+	clear: both;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+
+/*有base就删除前面的*/
+
+header {
+	background: #1da0ef;
+	height: 0.98rem;
+	width: 100%;
+	background-color: #e4e4e4;
+}
+
+header #totalvoteNum {
+	text-align: center;
+	line-height: 0.98rem;
+	font-size: 0.24rem;
+	border-bottom: 0.02rem solid #d5d5d5;
+}
+
+.MV_section {}
+
+.MV_section ul li.singBox_MV {
+	padding: 0.22rem 0.64rem 0.2rem 0.37rem;
+	height: 1.20rem;
+	border-bottom: 0.02rem solid #d5d5d5;
+	overflow: hidden;
+}
+
+.singBox_MV span {
+	font-size: 0.22rem;
+	line-height: 1.2rem;
+	padding-right: 0.18rem;
+	float: left;
+	color: #000;
+}
+
+.pkNumberOne span {
+	color: #fb4e4a;
+}
+
+.pkNumberTwo span {
+	color: #fba14a;
+}
+
+.pkNumberThird span {
+	color: #f3c62a;
+}
+
+.singBox_MV> .specialImgBox> img {
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	margin-top: 0.2rem;
+}
+
+.pkNumberOne .specialImgBox img,
+.pkNumberTwo .specialImgBox img,
+.pkNumberThird .specialImgBox img {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-top: 0;
+}
+
+.singBox_MV> .MV_singTex {
+	margin-left: 0.19rem;
+	height: 1.2rem;
+}
+
+.singBox_MV .MV_singTexUp> .singTexUp2 {
+	padding-top: 0.18rem;
+	font-size: 0.20rem;
+	line-height: 0.20rem;
+	color: #000;
+	margin-top: 0.05rem;
+}
+
+.pkNumberOne .MV_singTexUp> .singTexUp2 {
+	color: #fb4e4a;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+}
+
+.pkNumberTwo .MV_singTexUp> .singTexUp2 {
+	color: #fba14a;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+}
+
+.pkNumberThird .MV_singTexUp> .singTexUp2 {
+	color: #f3c62a;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+}
+
+.singBox_MV .MV_singTexUp> .singTime {
+	font-size: 0.20rem;
+	line-height: 0.20rem;
+	margin-top: 0.27rem;
+	color: #000;
+}
+
+.pkNumberOne .MV_singTexUp> .singTime {
+	color: #fb4e4a;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+}
+
+.pkNumberTwo .MV_singTexUp> .singTime {
+	color: #fba14a;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+}
+
+.pkNumberThird .MV_singTexUp> .singTime {
+	color: #f3c62a;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+}
+
+.singBox_MV .pkListBadge {
+	width: 0.88rem;
+	height: 0.97rem;
+	padding-top: 0.16rem;
+}
+
+.singBox_MV .pkListBadge img {
+	display: block;
+	width: 100%;
+}

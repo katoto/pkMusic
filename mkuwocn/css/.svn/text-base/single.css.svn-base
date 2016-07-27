@@ -1,0 +1,85 @@
+@charset "utf-8";
+
+body{ height: 100%;background: url(../img/singlebg.png) no-repeat;background-size: 100% 100%;position: relative;}
+.upside{ height: 100%;}
+.home{ width: 0.96rem;height: 0.96rem;background: url(../img/icon_home.png) no-repeat center center;background-size: 50%;}
+.share{ width: 0.96rem;height: 0.96rem;background: url(../img/icon_share.png) no-repeat center center;background-size: 45%;}
+
+.swiper-slide,.swiper-wrapper{width:100%;height:100%;position:relative;transform-style:preserve-3d;}
+.swiper-pagination,.swiper-wrapper{-webkit-transform:translate3d(0,0,0);}
+.swiper-container{width:100%;height: 100%;margin:0 auto;position:relative;z-index:1;}
+.swiper-wrapper{z-index:1;display:-webkit-box;display:-moz-box;display:-ms-flexbox;display:-webkit-flex;display:flex;-webkit-transition-property:-webkit-transform;-moz-transition-property:-moz-transform;-o-transition-property:-o-transform;-ms-transition-property:-ms-transform;transition-property:transform;-moz-transform:translate3d(0,0,0);-o-transform:translate(0,0);-ms-transform:translate3d(0,0,0);transform:translate3d(0,0,0);-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;}
+.swiper-slide,.swiper-wrapper{-ms-transform-style:preserve-3d;-moz-transform-style:preserve-3d;-webkit-transform-style:preserve-3d;}
+.swiper-slide{-webkit-flex-shrink:0;-ms-flex:0 0 auto;flex-shrink:0;color:#fff;}
+.swiper-pagination{height: 20px;text-align:center;-webkit-transition:300ms;-moz-transition:300ms;-o-transition:300ms;transition:300ms;-ms-transform:translate3d(0,0,0);-o-transform:translate3d(0,0,0);transform:translate3d(0,0,0);z-index:10;}
+.swiper-pagination-bullet{display: inline-block;width:6px;height:6px;border-radius:50%;background:#7c5e53;position: relative;bottom: 0.5rem;}
+.swiper-pagination-bullet-active{opacity:1;background:#2385c1;}
+.swiper-container-horizontal>.swiper-pagination{position: absolute;bottom: -10px;left:0;width:100%;}
+.swiper-container-horizontal>.swiper-pagination .swiper-pagination-bullet{margin:0 7px;}
+
+.tabbox{ width: 100%;height: 56%;}
+.lyrics{width: 100%; height: 96%;margin:0 auto;}
+.lyrTex{width:100%;height: 100%;margin:0 auto;overflow:hidden;text-align:center;font:14px/28px "微软雅黑";color:#a5a5a5;}
+.lyric_now{color:#1a90d7;}
+
+.simibox{width: 100%;height: 100%; color: #fff;}
+.simibox h3{ height: 0.9rem;line-height: 0.9rem;font-size: 0.32rem;border-bottom: 1px solid #7c7884;margin: 0 0.2rem;}
+.simigedanpic{ display: block; width: 1.2rem;height: 1.2rem; margin: 0.2rem 0.2rem 0 0.2rem;border-bottom: 1px solid transparent;}
+.simigedanpic img{ width: 100%;height: 100%;}
+.simigedaninfo{ width: 5.7rem ;border-bottom: 1px solid #7c7884;padding-bottom: 0.2rem;margin-top: 0.24rem;}
+.simigedaninfo .gedanname{ font-size: 0.32rem;}
+.simigedaninfo .gedannum{ font-size: 0.24rem;}
+.simisongs{ width: 100%;height: 3.7rem;overflow: hidden;position: relative;}
+.simisongs .ssinfo{ height: 2.7rem;overflow: hidden;position: relative;margin: 0 0.2rem;}
+.simisongs ul{ width: 100%;height: 100%;overflow-y: auto;position: absolute;left: 0;top: 0;}
+.simisongs li{height: 0.9rem;line-height: 0.9rem;border-bottom: 1px solid #7c7884;}
+.simisongs li span{ height: 100%;line-height: 0.9rem;color: #fff;}
+
+@media screen and (max-width:320px) and (max-height:480px){
+	.tabbox{ height: 54%;}
+	.simisongs{ height: 2.6rem;overflow: hidden;}
+	.tab_btns{ margin-top: 0;}
+}
+
+.downside{ position: fixed;left: 0;bottom: 0;width: 100%;height: 3.2rem;background: rgba(0,0,0,0.1);}
+.singleinfo{ margin-bottom: 0.4rem;position: relative;}
+.single_pic{ width:1.3rem;height: 1.3rem;margin: 0.2rem 0.3rem 0 0.2rem;}
+.single_pic img{ width: 100%;height: 100%;}
+.single_detail{ width: 50%;height: 1.3rem;position: relative;padding-top: 0.2rem;}
+.single_sname{ color: #fff;font-size: 0.32rem;line-height: 0.6rem;}
+.single_aname{ color: #999;font-size: 0.24rem;line-height: 0.4rem;}
+.single_detail p{ width: 100%;white-space: nowrap; text-overflow: ellipsis; overflow: hidden;}
+.playbox{ position: absolute;left: 0;bottom: -0.1rem;width: 5.8rem;height: 0.3rem;font-size: 0.24rem;color: #999;}
+.playline{ width: 3.6rem;height: 0.05rem;background: #fff;position: relative;top: 0.14rem;margin-right: 0.2rem;}
+.fenge{ margin: 0 0.1rem;}
+.playline_clone{ width: 0px;height: 100%;background: #1DA0EF;}
+.single_playbtn{ width: 1rem;height: 1rem;background: url(../img/playbtn2.png) no-repeat center center;background-size: 70%;margin: 0.16rem 0.16rem 0 0;}
+
+.single_list{ width: 0.8rem;height: 0.8rem;background: url(../img/single_slist.png) no-repeat center center;background-size: 50%;margin-right: 1.1rem;}
+.single_down{ width: 3.4rem;height: 0.8rem;border-radius: 20px;text-align: center;line-height: 0.8rem;background: #1da0ef;color: #fff;font-size: 0.32rem;}
+.single_artist{ width: 0.8rem;height: 0.8rem;background: url(../img/single_artist.png) no-repeat center center; background-size: 55%;margin-right: 0.1rem;}
+
+.single_queue{ position: fixed;left: 0;bottom: 0;width: 100%;background: rgba(0,0,0,0.7);z-index: 100;}
+.single_queue h3,.queue_close{ width: 100%;height: 50px;line-height: 50px;font-size: 16px;text-align: center;color: #fff;z-index: 200;}
+.queue_content{ overflow: hidden;position: relative;width: 100%;}
+.single_playlist{ position: absolute;left: 0;top:50px;width: 100%;overflow-y: auto;}
+.single_playlist li{ border-top: 1px solid #ccc;height: 40px;line-height: 40px;padding-left: 10px;}
+.single_playlist li span{ height: 40px;line-height: 40px;}
+#queue_title{ position: absolute;left: 0;top: 0;}
+.queue_close{ border-top: 1px solid #ccc;position: absolute;left: 0;bottom: 0;}
+.hidebox{ width: 100%;height: 50px;}
+
+/*分享*/
+.sharebox{ display: none;width: 72%;background: #fff;border-radius: 10px;position: absolute;left: 14%;top: 25%;z-index: 500;}
+.close{ position: absolute;right: 0;top: 0;width: 0.7rem;height: 0.7rem;background: url(../img/close.png) no-repeat center center;background-size: 40%;}
+.shareinfo{ margin: 0.4rem 0.36rem 0.34rem 0.36rem;}
+.sharepic{ width: 1.3rem;height: 1.3rem;margin-right: 0.2rem;}
+.sharepic img{ width: 100%;height: 100%;}
+.sharetxt{ padding-top: 0.14rem;}
+.shareinfo p{ font-size: 0.3rem;color: #000;line-height: 0.5rem;}
+.sharearea{ display: -webkit-flex;display: flex;justify-content: space-between;height: 0.9rem;margin: 0 0.36rem 0.36rem;}
+.sharearea span{ width: 0.9rem;height: 100%; }
+.sweixin{background: url(../img/sweixin.png) no-repeat;background-size: 100%;}
+.sqq{ background: url(../img/sqq.png) no-repeat;background-size: 100%;}
+.sweibo{ background: url(../img/sweibo.png) no-repeat;background-size: 100%;}
+.szone{ background: url(../img/szone.png) no-repeat;background-size: 100%;}

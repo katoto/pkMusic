@@ -1,0 +1,516 @@
+<!doctype html>
+<html lang="en" style="font-size: 100px">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<!--当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari-->
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<!--将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式-->
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<!--忽略将页面中的数字识别为电话号码-->
+		<meta content="telephone=no" name="format-detection">
+		<!--忽略Android平台中对邮箱地址的识别-->
+		<meta content="email=no" name="format-detection">
+		<title>Document</title>
+		<link rel="stylesheet" href="css/base.css">
+		<link rel="stylesheet" href="css/indexMoveUpDown.css">
+		<link rel="shortcut icon" href="favicon.ico">
+		<style type="text/css">
+			header {
+				background: #1da0ef;
+				height: 0.88rem;
+				/*position: fixed;*/
+				width: 100%;
+				/*top: 0;*/
+				background-color: #000000;
+				z-index: 100;
+				/*transition: all 0.3s;*/
+			}
+			
+			.MV_section {
+				/*padding-top: 0.88rem;*/
+				padding-top: 1.63rem;
+			}
+			
+			.search {
+				width: 0.88rem;
+				height: 100%;
+				margin-right: 1.8rem;
+				display: -webkit-box;
+				-webkit-box-orient: horizontal;
+				-webkit-box-pack: center;
+				-webkit-box-align: center;
+			}
+			
+			.searchbtn {
+				display: block;
+				width: 0.42rem;
+				height: 0.42rem;
+				background-image: url(img/pics.png);
+				background-repeat: no-repeat;
+				background-position: 0 0;
+				background-size: 950%;
+			}
+			
+			.logo {
+				width: 2.1rem;
+				height: 100%;
+				margin: 0 auto;
+			}
+			
+			.logo2 {
+				width: 1.88rem;
+				height: 0.6rem;
+				background-image: url(img/logo2.png);
+				background-size: 100%;
+				margin: 0.1rem 0 0.1rem 0.2rem;
+			}
+			
+			.logopic {
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: url(img/logo.png) 0 center no-repeat;
+				background-size: 100%;
+			}
+			
+			.download {
+				width: 1.6rem;
+				height: 0.52rem;
+				margin: 0.2rem 0.2rem 0 0;
+			}
+			
+			.download2 {
+				width: 1.6rem;
+				height: 0.52rem;
+				margin: 0.13rem 0.2rem 0 0;
+				border-radius: 30px;
+				text-align: center;
+				color: #fff;
+				font-size: 0.12rem;
+				line-height: 0.52rem;
+				background: #1da0ef;
+			}
+			
+			.downapp {
+				display: block;
+				width: 100%;
+				height: 100%;
+				border-radius: 30px;
+				text-align: center;
+				color: #fff;
+				font-size: 0.12rem;
+				line-height: 0.52rem;
+				background: #1470a7;
+			}
+			
+			footer {
+				background-color: #DDDDDD;
+				position: fixed;
+				width: 100%;
+				bottom: -0.75rem;
+			}
+			
+			.nav {
+				position: relative;
+				z-index: 10;
+				background-color: #fff;
+				/*margin-top: 0.88rem;*/
+			}
+			
+			.nav {
+				width: 100%;
+				height: 0.76rem;
+				border-bottom: 1px solid #ddd;
+			}
+			
+			.nav .navitem {
+				float: left;
+				width: 20%;
+				font-size: 0.3rem;
+				text-align: center;
+				line-height: 0.76rem;
+				color: #333;
+				border-bottom: 2px solid transparent;
+			}
+			
+			.nav .navitem.on {
+				color: #2095dd;
+				border-bottom: 2px solid #2095dd;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<header class="clearfix" id="headerBox">
+			<div class="search fl">
+				<span class="searchbtn"></span>
+			</div>
+			<div class="logo fl">
+				<span class="logopic"></span>
+			</div>
+			<div class="download fr">
+				<a class="downapp">下载APP</a>
+			</div>
+		</header>
+		<nav class="nav clearfix" id="nav">
+			<span class="navitem on">推荐</span>
+			<span class="navitem">排行</span>
+			<span class="navitem">分类</span>
+			<span class="navitem">歌手</span>
+			<span class="navitem">MV</span>
+		</nav>
+		<section class="MV_section">
+			<!--MV 详情页-->
+			<!--滑动盒子-->
+			<ul>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+				<li class="singBox_MV clearfix" onclick="commplay(0)">
+					<div class="specialImgBox">
+						<img src="img/MVPic_1.png">
+					</div>
+					<div class="MV_singTex">
+						<div class="MV_singTexUp">
+							<p class="singTexUp2">What do you mean</p>
+							<p class="singTime">Justin Bieber</p>
+						</div>
+						<a href="javascript:void(0);" class="downLoad">
+							<img src="img/download_black.png">
+						</a>
+					</div>
+				</li>
+
+			</ul>
+		</section>
+
+		<footer id="footerBox">
+			<div class="footer clearfix">
+				<a class="logo2 fl"></a>
+				<a class="download2 fr">下载APP</a>
+			</div>
+		</footer>
+
+		<script src='js/singerPage.js'></script>
+		<!--<script type="text/javascript" src="js/swiper.min.js" ></script>-->
+
+		<!--js 代码-->
+
+		<script type="text/javascript">
+			var windowTop = 0;
+			var headerBox = document.getElementById('headerBox');
+			var navBox = document.getElementById('nav');
+			var headerHeight = headerBox.offsetHeight;
+			var navHeight = navBox.offsetHeight;
+			var footerBox = document.getElementById('footerBox');
+
+			//			需要设置fixed  定位,且 section  给padding-top
+			navBox.style.position = 'fixed';
+			headerBox.style.position = 'fixed';
+			navBox.style.top = headerHeight + 'px';
+
+			window.onscroll = function() {
+
+				var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
+
+
+				if (scrollTop > windowTop) {
+
+					//
+//					console.log("向上滑动");
+					if(  scrollTop>0 && scrollTop < headerHeight  ){
+						headerBox.style.transform = 'none';
+						navBox.style.transform = 'none';
+					}else{
+						headerBox.style.webkitTransition = 'all 0.3s';
+						headerBox.style.transition = 'all 0.3s';
+						headerBox.style.transform = 'translateY(' + (-headerHeight) + 'px)';
+
+						navBox.style.webkitTransition = 'all 0.3s';
+						navBox.style.transition = 'all 0.3s';
+						navBox.style.transform = 'translateY(' + (-headerHeight) + 'px)';
+						
+												//					move 底部移动
+						footerBox.style.webkitTransition = 'all 0.3s';
+						footerBox.style.transition = 'all 0.3s';
+						footerBox.style.transform = 'translateY(' + (-navHeight) + 'px)';
+					}
+
+
+
+
+
+					windowTop = scrollTop; // 记录位置
+
+				} else if (scrollTop < windowTop) {
+
+					headerBox.style.transform = 'none';
+					navBox.style.transform = 'none';
+//					console.log('向下滑动');
+
+					footerBox.style.transform = 'none';
+					windowTop = scrollTop;
+
+				}
+
+			}
+		</script>
+		
+		
+
+	</body>
+
+</html>

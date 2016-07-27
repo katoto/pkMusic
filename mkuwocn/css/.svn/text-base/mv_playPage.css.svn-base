@@ -1,0 +1,236 @@
+/*banner 头部*/
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*section banner*/
+/*叠成处理*/
+.banner {
+    width: 100%;
+    height: 5.66rem;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+}
+
+.MV_section {
+    padding-top: 5.66rem;
+}
+
+.flexBox {
+    width: 100%;
+    height: 5.66rem;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+/*叠成处理end*/
+
+.banner > .bannerBox {
+    position: relative;
+    width: 100%;
+}
+
+.banner > .bannerBox > img {
+    display: block;
+    width: 100%;
+    max-height: 400px;
+}
+
+.banner > .bannerBox > a:nth-child(2) {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.74rem;
+    margin-top: -0.74rem;
+    width: 1.48rem;
+    height: 1.48rem;
+    background: url("../img/icon_play.png") no-repeat;
+    padding: 0.22rem;
+    background-size: 1.07rem 1.07rem; /*宽度和高度*/
+    background-origin: content-box;
+}
+
+.box {
+    border-radius: 50%;
+    border: 1px solid red;
+    color: red;
+}
+
+/*单曲列表 */
+.singBox {
+    width: 100%;
+    height: 1.45rem;
+    padding: 0.27rem 0 0.26rem 0.2rem;
+    overflow: hidden;
+    border-bottom: 0.01rem solid #e5e5e5;
+
+}
+
+.singBox > .singTex {
+    width: 75%;
+    height: 1.45rem;
+    overflow: hidden;
+    float: left;
+}
+
+.singBox > .singTex > .singTexUp {
+    width: 100%;
+}
+
+.singTex > .singTexUp > .singTexUp2 {
+    width: 100%;
+    height: 0.54rem;
+    font-size: 0.32rem;
+    line-height: 0.54rem;
+    color: #333;
+    position: relative;
+}
+
+/*ul 的margin  voiceArea*/
+.voiceArea {
+    width: 100%;
+    height: 0.2rem;
+    background-color: #f2f2f2;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+
+/*音频部分*/
+/*a的点击区域*/
+.singBox > .singTex > .singTexDown {
+    height: 0.5rem;
+    width: 100%;
+    color: #666;
+}
+
+.singBox > .singTex > .singTexDown > p {
+    font-size: 0.28rem;
+    line-height: 0.5rem;
+    height: 0.5rem;
+    float: left;
+}
+
+.singBox > .singTex > .singTexDown > a {
+    display: inline-block;
+    width: 1rem;
+    height: 0.4rem;
+    background-color: #1da0ef;
+    float: left;
+    text-align: center;
+    font: 0.24rem/0.4rem "微软雅黑";
+    margin-top: 0.05rem;
+    margin-left: 0.12rem;
+    border-radius: 0.2rem;
+}
+
+.singBox > .singDom2 {
+    float: right;
+    width: 0.36rem;
+    height: 0.36rem;
+    box-sizing: content-box;
+    padding: 0.26rem 0.28rem 0.26rem 0.26rem;
+}
+
+.singBox > .singDom2 > img {
+    display: block;
+    width: 100%;
+}
+
+.singBox > .singMv {
+    float: right;
+    width: 0.46rem;
+    height: 0.46rem;
+    box-sizing: content-box;
+    padding: 0.23rem 0.26rem 0.26rem 0.1rem;
+}
+
+.singBox > .singMv > img {
+    display: block;
+    width: 100%;
+}
+
+/*banner end */
+
+/*!*滑动样式*!*/
+/*.mv_Slide_Box {*/
+/*width: 100%;*/
+/*height:9.06rem;*/
+/*background-color: rebeccapurple;*/
+/*}*/
+
+/*mv 样式*/
+.singBox_MV {
+    width: 100%;
+    height: 1.51rem;
+    padding: 0.18rem 0 0.12rem 0.2rem;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.singBox_MV > .specialImgBox {
+    width: 1.92rem;
+    height: 1.2rem;
+    /*overflow: hidden;*/
+}
+
+.singBox_MV > .specialImgBox > img {
+    width: 100%;
+    display: inline-block;
+}
+
+.singBox_MV > .MV_singTex {
+    flex: 1;
+    margin-left: 0.14rem;
+    height: 1.3rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+}
+
+.singBox_MV > .MV_singTex > .MV_singTexUp > .singTexUp2 {
+    padding-top: 0.14rem;
+    font-size: 0.32rem;
+    line-height: 0.58rem;
+    color: #333;
+}
+
+.singBox_MV > .MV_singTex > .MV_singTexUp > .singTime {
+    font-size: 0.24rem;
+    line-height: 0.50rem;
+    color: #666;
+}
+
+.singBox_MV > .MV_singTex > .downLoad {
+    position: absolute;
+    top: 0;
+    right: 0;
+    box-sizing: content-box;
+    float: left;
+    width: 0.36rem;
+    height: 0.36rem;
+    padding: 0.67rem 0.27rem 0.46rem 0.27rem;
+}
+
+.singBox_MV > .MV_singTex > .downLoad > img {
+    display: block;
+    width: 100%;
+}
+
+/*底部box*/
+.footerBox {
+    width: 100%;
+    height: 0.88rem;
+    text-align: center;
+    line-height: 0.88rem;
+    color: #fff;
+    background: #1da0ef;
+    font-size: 0.3rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}

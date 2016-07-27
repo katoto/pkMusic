@@ -1,0 +1,325 @@
+/*banner 头部*/
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.banner {
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+    z-index: 1001;
+    margin: auto;
+    
+}
+
+.banner > div {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    /*background-color: rgba(0, 0, 0, 0.4);*/
+    overflow: hidden;
+}
+
+.banner > div > img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: 4rem;
+    -webkit-filter: blur(3px);
+    -ms-filter: blur(3px);
+    filter: blur(3px);
+}
+
+.banner > div > a:nth-child(2) {
+    position: absolute;
+    top: 0.38rem;
+    left: 50%;
+    margin-left: -0.9rem;
+    width: 1.8rem;
+    height: 1.8rem;
+    background: url("../img/topBg.gif") no-repeat;
+    /*宽度和高度*/
+    background-size: 1.8rem 1.8rem;
+    background-origin: content-box;
+}
+
+.banner > div > a:nth-child(3) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0.83rem;
+    height: 0.82rem;
+    background: url("../img/icon_home.png") no-repeat;
+    padding: 0.25rem 0.15rem 0.15rem 0.25rem;
+    /*宽度和高度*/
+    background-size: 0.43rem 0.42rem;
+    background-origin: content-box;
+}
+
+.banner > div > a:nth-child(4) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0.80rem;
+    height: 0.81rem;
+    background: url("../img/icon_share.png") no-repeat;
+    padding: 0.28rem 0.27rem 0.15rem 0.15rem;
+    /*宽度和高度*/
+    background-size: 0.38rem 0.38rem;
+    background-origin: content-box;
+}
+
+.banner > div > a:nth-child(5) {
+    position: absolute;
+    box-sizing: content-box;
+    top: 0.87rem;
+    left: 50%;
+    margin-left: -0.35rem;
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url("../img/icon_play.png") no-repeat;
+    background-size: 0.7rem 0.7rem;
+    background-origin: content-box;
+}
+
+.banner > div > .titleCenter {
+    position: absolute;
+    /*width: 7.5rem;*/
+    width:100%;
+    text-align: center;
+    bottom: 1.44rem;
+    font: 300 0.32rem/0 "microsoft yahei";
+    color: #fff;
+}
+
+.banner > div > a:nth-child(7) {
+    position: absolute;
+    bottom: 0.4rem;
+    left: 50%;
+    margin-left: -1.325rem;
+    height: 0.65rem;
+    padding-left: 0.7rem;
+    padding-right: 0.27rem;
+    font: 400 0.28rem/0.65rem "microsoft yahei";
+    color: #fff;
+    background-color: #9c864f;
+    border-radius: 0.33rem;
+}
+
+.banner > div > a:nth-child(7) > i {
+    position: absolute;
+    left: 0.28rem;
+    top: 0.15rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    background-origin: content-box;
+    background: url("../img/download_white.png") no-repeat;
+    background-size: 0.36rem 0.36rem;
+
+}
+
+/*banner end */
+
+.flexBox {
+    width: 100%;
+    height: 4rem;
+    background-color: #d0d0d1;
+    position: fixed;
+    top:0;
+    z-index: 1;
+}
+
+.musicListBox {
+    padding-top: 4rem;
+    overflow: hidden;
+}
+
+/*音乐列表*/
+.singBox {
+    width: 100%;
+    height: 1.19rem;
+    border-bottom: 0.01rem solid #e5e5e5;
+    padding: 0.17rem 0 0.14rem 0.2rem;
+    overflow: hidden;
+}
+
+.singBox > .singTex {
+    width: 75%;
+    height: 0.88rem;
+    overflow: hidden;
+    float: left;
+}
+
+.singBox > .singTex > .singTexUp {
+    width: 100%;
+}
+
+.singTex > .singTexUp > .singTexUp2 {
+    width: 100%;
+    height: 0.5rem;
+    font: 0.32rem/0.5rem "微软雅黑";
+    color: #333;
+    position: relative;
+}
+
+.singTex > .singTexUp > .singTexUp2 > p {
+    display: inline-block;
+    max-width: 72%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*图标HQ 无损 mv*/
+.singTex > .singTexUp > .singTexUp2 > .spanSingHQ {
+    display: inline-block;
+    width: 0.42rem;
+    margin-left: 0.08rem;
+    overflow: hidden;
+}
+
+.singTex > .singTexUp > .singTexUp2 > .spanSingHQ > img {
+    display: inline-block;
+    margin-top: 0.15rem;
+    width: 100%;
+}
+
+.singTex > .singTexUp > .singTexUp2 > .spanSingLMusic {
+    display: inline-block;
+    width: 0.42rem;
+    margin-left: 0.08rem;
+    overflow: hidden;
+}
+
+.singTex > .singTexUp > .singTexUp2 > .spanSingLMusic > img {
+    display: inline-block;
+    margin-top: 0.15rem;
+    width: 100%;
+}
+
+.singTex > .singTexUp > .singTexUp2 > .spanSingMV {
+    display: inline-block;
+    width: 0.42rem;
+    margin-left: 0.08rem;
+    overflow: hidden;
+}
+
+.singTex > .singTexUp > .singTexUp2 > .spanSingMV > img {
+    display: inline-block;
+    margin-top: 0.15rem;
+    width: 100%;
+}
+
+.singBox > .singTex > .singName {
+    width: 100%;
+    height: 0.4rem;
+    font: 0.22rem/0.4rem "微软雅黑";
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; /*禁止折行*/
+}
+
+.singBox > .singDom2 {
+    float: right;
+    width: 0.36rem;
+    height: 0.36rem;
+    box-sizing: content-box;
+    padding: 0.26rem 0.28rem 0.26rem 0.26rem;
+}
+
+.singBox > .singDom2 > img {
+    display: block;
+    width: 100%;
+}
+
+.singBox > .singMv {
+    float: right;
+    width: 0.47rem;
+    height: 0.36rem;
+    box-sizing: content-box;
+    padding: 0.26rem 0.26rem 0.26rem 0;
+}
+
+.singBox > .singMv > img {
+    display: block;
+    width: 100%;
+}
+
+/*付费弹框*/
+.alert_box_bg {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+}
+
+.alert_box {
+    width: 5.02rem;
+    height: 3.06rem;
+    position: absolute;
+    z-index: 10;
+    top: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 0.1rem;
+    background-color: #fff;
+}
+
+.alert_box:before {
+    content: "";
+    display: block;
+    position: absolute;
+    box-sizing: content-box;
+    right: 0;
+    top: 0;
+    width: 0.22rem;
+    height: 0.22rem;
+    background: url("../img/close_down.png") no-repeat;
+    background-size: 0.22rem 0.22rem;
+    background-origin: content-box;
+    padding: 0.12rem;
+
+}
+
+.alert_box > div > p {
+    margin-top: 0.50rem;
+    font: 0.28rem/0.4rem "微软雅黑";
+}
+
+.alert_box > .alert_down {
+    display: block;
+    position: relative;
+    margin: 0.4rem auto;
+    padding: 0 0.3rem 0 0.72rem;
+    width: 3rem;
+    background-color: #1da0ef;
+    font: 0.28rem/0.65rem "微软雅黑";
+    border-radius: 0.32rem;
+}
+
+.alert_box > .alert_down > i {
+    position: absolute;
+    left: 0.32rem;
+    top: 0.16rem;
+    width: 0.36rem;
+    height: 0.36rem;
+    font-style: normal;
+    color: #fff;
+    background: url("../img/download_white.png") no-repeat;
+    background-size: 0.36rem 0.36rem;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

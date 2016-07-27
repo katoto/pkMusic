@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+.chartbang{ border-top: 0.2rem solid #f2f2f2;}
+.chart_li{ border-right: 0.2rem solid #f2f2f2;border-bottom: 0.2rem solid #f2f2f2;border-left: 0.2rem solid #fff;}
+.chart_pic{float: left;width: 2.5rem;height: 2.5rem;}
+.chart_pic img{ width: 100%;height: 100%;}
+.chart_con{ float: left;width: 3.5rem;margin-left: 0.2rem;}
+.chart_con h3{ margin: 0.28rem 0 0.18rem 0;font-size: 0.32rem;color: #333;}
+.chart_con p{ width: 100%;font-size: 0.3rem;margin-bottom: 0.06rem;}
+.chart_num{ margin-right: 0.2rem;color: #999;}
+.chart_artname{ color: #999;}
+.chart_songname{ }
+.chart_toright{float: right; width: 0.4rem; height: 2.5rem;background: url(../img/arrow_r.png) no-repeat center center;background-size: 40%; margin-right: 0.2rem;}
